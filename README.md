@@ -17,13 +17,6 @@ Server Site Link:-  [ubi](https://)
 
 
 
-
-
-### Server Side Link-
-Live site- https://sofi-visa-hub-server.vercel.app/
-
-Github- https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-SofiuzzamanSofi
-
 ### `Components Using This Projects--`
 
 
