@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Button from '@/workZone/components/ui/button'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -55,9 +56,7 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-yellow-200`}>
-            Find in-depth information about Next.js features and API.
-          </p>
+          <Button />
         </a>
 
         <a
