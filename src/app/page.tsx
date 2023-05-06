@@ -56,7 +56,9 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <Button />
+          <Button >
+            aim button
+          </Button>
         </a>
 
         <a
