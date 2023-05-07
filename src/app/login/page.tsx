@@ -3,10 +3,13 @@
 import Button from '@/workZone/components/ui/button'
 import { FC, useState } from 'react'
 import { signIn } from 'next-auth/react';
+import { toast } from 'react-hot-toast';
 
 interface pageProps {
 
 };
+
+
 
 
 
@@ -18,8 +21,10 @@ const Page: FC<pageProps> = ({ }) => {
     const loginWithGoogle = async () => {
         setIsLoading(true);
         try {
+            // throw new Error("sign in failed");
             await signIn("google")
-        } catch (error) {
+        } catch (error: any) {
+            toast.error(error.message || "Something went wrong")
             console.log(error)
         } finally {
             setIsLoading(false);
