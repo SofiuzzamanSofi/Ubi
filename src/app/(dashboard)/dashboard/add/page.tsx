@@ -1,3 +1,4 @@
+import AddFriendButton from '@/workZone/components/ui/AddFriendButton'
 import { FC } from 'react'
 
 interface pageProps {
@@ -13,6 +14,7 @@ const Page: FC<pageProps> = ({ }) => {
         >
             Add a friend
         </h1>
+        <AddFriendButton />
     </main>
 }
 
