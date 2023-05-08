@@ -1,13 +1,17 @@
+import { authOptions } from '@/workZone/components/libZone/authFn'
+import { getServerSession } from 'next-auth'
 import { FC } from 'react'
 
 interface pageProps {
 
 }
 
-const Page: FC<pageProps> = ({ }) => {
-    return <div>
-        <h1>This si spage: dashboard</h1>
-    </div>
+const Page = async ({ }) => {
+
+    const session = await getServerSession(authOptions)
+    return <pre>
+        {JSON.stringify(session)}
+    </pre>
 }
 
 export default Page
