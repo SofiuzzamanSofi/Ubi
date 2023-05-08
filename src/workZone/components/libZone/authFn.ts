@@ -29,8 +29,8 @@ export const authOptions: NextAuthOptions = {
       strategy: "jwt",
    },
    pages: {
-      signIn: "/auth/signin",
-      signOut: "/auth/signout",
+      signIn: "/login",
+      // signOut: "/auth/signout",
    },
    providers: [
       GoogleProvider({
