@@ -10,6 +10,8 @@ const getGoogleCredentials = () => {
    const clientId = process.env.GOOGLE_CLIENT_ID as string;
    const clientSecret = process.env.GOOGLE_CLIENT_SECRET as string;
 
+
+   // console.log("process.env.CLIENT_SECRET::", process.env.GOOGLE_CLIENT_SECRET)
    if (!clientId || clientId.length === 0) {
       throw new Error("Missing GOOGLE_CLIENT_ID")
    };
