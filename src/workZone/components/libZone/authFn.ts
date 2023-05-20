@@ -32,7 +32,7 @@ export const authOptions: NextAuthOptions = {
    },
    pages: {
       signIn: "/login",
-      // signOut: "/auth/signout",
+      // signOut: "/auth/signout", // nij nij e bosalam & then comment korlam
    },
    providers: [
       GoogleProvider({
