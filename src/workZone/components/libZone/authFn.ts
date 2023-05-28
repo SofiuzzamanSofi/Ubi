@@ -31,8 +31,8 @@ export const authOptions: NextAuthOptions = {
       strategy: "jwt",
    },
    pages: {
-      signIn: "/login",
-      // signOut: "/auth/signout", // nij nij e bosalam & then comment korlam
+      signIn: "",
+      // signOut: "/auth/signout", // nij nij e bosalam & then comment korlam example for this to work
    },
    providers: [
       GoogleProvider({
